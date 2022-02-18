@@ -20,17 +20,17 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
 
 
-        googleButton = findViewById(R.id.button3);
+        googleButton = findViewById(R.id.button4);
         googleButton.setOnClickListener(v -> {
             Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com"));
             startActivity(i);
         });
 
-        searchText = findViewById(R.id.searchText);
-        String search = searchText.getText().toString();
         searchButton = findViewById(R.id.button5);
         searchButton.setOnClickListener(v -> {
-            Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse(search));
+            searchText = findViewById(R.id.searchText);
+            String search = searchText.getText().toString();
+            Intent i = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com/search?q="+search));
             startActivity(i);
         });
     }

@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button firstButton , thirdButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(getApplicationContext(),SecondActivity.class);
             startActivity(i);
         });
-        
+
         thirdButton.setOnClickListener(v -> {
             Intent j = new Intent(getApplicationContext(),ThirdActivity.class);
             startActivity(j);
