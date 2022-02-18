@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IntentDemo</string>
+    <string name="button1">Second Activity</string>
+    <string name="button2">Main Activity</string>
+    <string name="button3">Web</string>
+    <string name="button4">Google</string>
+    <string name="button5">Search</string>
+    <string name="mainTextView">Main Activity</string>
+    <string name="secondTextView">Second Activity</string>
+</resources>
